@@ -1,0 +1,53 @@
+.section-fonction {
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: center;
+    height: 370px;
+  }
+  
+  .section-fonction h1 {
+    text-align: left;
+    padding: 30px 0px 30px 10px;
+  }
+  .liste-btn {
+    position: relative;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-fonction button {
+    width: 80%;
+    height: 72.38px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 15px 0px #0000001a;
+    border: none;
+  }
+  .btn {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+  }
+  .btn i  {
+  
+    padding-right: 10%;
+    width: 18px;
+    height: 17.91px;
+   
+  }
+  span .number {
+  
+    color: white;
+  }
+  .section-fonction span {
+    right: 24px;
+    width: 24px;
+    position: absolute;
+    left: 6%;
+    border-radius: 100%;
+    color: white;
+    background:#9356dc;
+  }

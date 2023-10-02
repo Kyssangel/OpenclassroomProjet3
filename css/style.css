@@ -7,8 +7,229 @@
   font-family: "Shrikhand", sans-serif;
 }
 
-h1 {
-  color: red;
+header {
+  text-align: center;
+}
+
+header img {
+  width: 162px;
+  height: 44px;
+  margin-top: 10px;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 19px;
+  gap: 15px;
+  background: #eaeaea;
+  height: 50px;
+}
+
+.section-title {
+  background: #f6f6f6;
+  text-align: center;
+  height: 280px;
+}
+
+.section-title h1 {
+  top: 152px;
+  left: 42px;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  margin-top: 0;
+  padding: 25px 0px 25px 0px;
+}
+
+.section-title p {
+  top: 220px;
+  left: 34px;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 21px;
+  color: #353535;
+  padding: 0px 0px 30px 0px;
+}
+
+.section-title button {
+  width: 218px;
+  height: 50px;
+  top: 50px;
+  border-radius: 25px;
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+}
+
+.section-title .button {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  text-align: center;
+  color: #ffffff;
+  border: none;
+}
+
+.section-fonction {
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: center;
+  height: 370px;
+}
+
+.section-fonction h1 {
+  text-align: left;
+  padding: 30px 0px 30px 10px;
+}
+
+.liste-btn {
+  position: relative;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-fonction button {
+  width: 80%;
+  height: 72.38px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1019607843);
+  border: none;
+}
+
+.btn {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+}
+
+.btn i {
+  padding-right: 10%;
+  width: 18px;
+  height: 17.91px;
+}
+
+span .number {
+  color: white;
+}
+
+.section-fonction span {
+  right: 24px;
+  width: 24px;
+  position: absolute;
+  left: 6%;
+  border-radius: 100%;
+  color: white;
+  background: #9356dc;
+}
+
+.section-restaurants {
+  background: #f6f6f6;
+  width: 100%;
+  height: 1200px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.section-restaurants h1 {
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  padding: 30px 0px 0px 20px;
+  height: 68px;
+  justify-content: left;
+}
+
+.card {
+  background-color: white;
+  border-radius: 20px;
+  width: 90%;
+  height: 251px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1019607843);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 15px 15px 0px 0px;
+  height: 70%;
+}
+
+.card-content {
+  border-radius: 15px;
+}
+
+.card-title {
+  top: 190px;
+  left: 13px;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.card-text p {
+  font-family: Roboto;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top: 0;
+  padding-left: 10px;
+}
+
+.card-like {
+  width: 22px;
+  height: 21px;
+  top: 197px;
+  left: 293px;
+  gap: 20px;
+}
+
+.section-footer {
+  background: #353535;
+  height: 186px;
+}
+
+.section-footer .img {
+  width: 139px;
+  height: 27px;
+  color: white;
+}
+
+.contenair {
+  justify-content: center;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.title-shrikhand {
+  font-family: "Shrikhand", sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */
