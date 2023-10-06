@@ -1,9 +1,29 @@
 .section-footer {
     background: #353535;
     height: 186px;
+    color: white;
   }
-   .section-footer .img {
-    width: 139px;
+    .img {
+    width: 137px;
     height: 27px;
     color: white;
+    padding: 0px 0px 0px 20px;
+    margin-top: 20px;
+  }
+
+  .list-footer{
+    padding: 10px 0px 0px 20px;
+ }
+.footer-item i{
+  padding-right: 3%;
+  
+}
+.footer-item a{
+  color: white;
+}
+.list-footer ul {
+  display: flex;
+gap: 10px;
+flex-direction: column;
+
   }
