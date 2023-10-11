@@ -1,34 +1,16 @@
-
-
-@import'./variables';
-@import'./mixins';
-@import'./fonts';
-@import'./header';
-@import'./explorer';
-@import'./fonctionnement';
-@import'./restaurants';
-@import'./footer';
-
-
-
-.contenair {
-    justify-content: center;
-  }
-  
-  
+@import "./variables";
+@import "./mixins";
+@import "./fonts";
+@import "./header";
+@import "./explorer";
+@import "./fonctionnement";
+@import "./restaurants";
+@import "./footer";
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
-  }
-  
-  * {
-    font-family: "Roboto", sans-serif;
-  }
-  
-  .title-shrikhand {
-    font-family: "Shrikhand", sans-serif;
-  }
+  font-family: "Roboto", sans-serif;
+}
+
+.title-shrikhand {
+  font-family: "Shrikhand", sans-serif;
+}
