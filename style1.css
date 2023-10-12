@@ -1,0 +1,25 @@
+
+.header{
+display: flex;
+  height: 63px;
+  gap: 25%;
+}
+.header .img{
+    font-family: Shrikhand;
+ font-style: italic;
+    font-weight: 400;
+  width: 162px;
+height: 44px;
+left: 16px;
+margin-top: 10px;
+}
+.header .link-header{
+    width: 30px;
+height: 30px;
+text-align: left;
+text-align: center;
+padding: 20px 0px 0px 15px;
+}
+/*****section restaurant***/
+
+
