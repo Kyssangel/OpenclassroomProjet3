@@ -2,15 +2,16 @@
     background: #353535;
     height: 186px;
     color: white;
+    & .img {
+      width: 137px;
+      height: 27px;
+      color: white;
+      padding: 0px 0px 0px 20px;
+      margin-top: 20px;
+      filter: brightness(0) invert(1);
+    }
+    
   }
-    .img {
-    width: 137px;
-    height: 27px;
-    color: white;
-    padding: 0px 0px 0px 20px;
-    margin-top: 20px;
-  }
-
   .list-footer{
     padding: 10px 0px 0px 20px;
  }
