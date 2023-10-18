@@ -280,7 +280,7 @@ span .number {
   background: #f6f6f6;
   border-radius: 30px;
   width: 100%;
-  height: 1140px;
+  height: 1160px;
   text-align: center;
 }
 
@@ -360,7 +360,7 @@ span .number {
 }
 
 .btn-commande {
-  padding: 10%;
+  padding-top: 15%;
 }
 
 .btn-footer {
