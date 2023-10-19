@@ -1,7 +1,10 @@
 .header {
-    display: flex;
+  display: flex;
     height: 63px;
-    gap: 20%;
+    gap: 25%;
+  }
+  .header i{
+   gap: 20%;
   }
   .header .img {
     font-family: Shrikhand;

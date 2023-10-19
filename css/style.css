@@ -129,7 +129,7 @@ header img {
   height: 17.91px;
 }
 
-span .number {
+button .number {
   color: white;
 }
 
@@ -143,6 +143,32 @@ span .number {
   background: #9356dc;
 }
 
+@media screen and (min-width: 1024px) {
+  .section-fonction h1 {
+    padding-left: 10%;
+  }
+  .liste-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+  }
+  .section-fonction span {
+    flex-direction: row;
+    left: 10%;
+    position: absolute;
+  }
+  .section-fonction {
+    height: 220px;
+  }
+  button.btn {
+    width: 322px;
+  }
+  .section-restaurants {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
 .section-restaurants {
   background: #f6f6f6;
   width: 100%;
@@ -250,6 +276,10 @@ span .number {
 .header {
   display: flex;
   height: 63px;
+  gap: 25%;
+}
+
+.header i {
   gap: 20%;
 }
 
@@ -289,7 +319,6 @@ span .number {
 }
 
 .menu h1 {
-  display: flex;
   font-family: Shrikhand;
   font-size: 24px;
   font-style: italic;
@@ -297,9 +326,11 @@ span .number {
   line-height: 41px;
   letter-spacing: 0em;
   text-align: left;
-  padding: 15px 30px 0px 10px;
-  justify-content: space-between;
-  align-items: center;
+  padding: 15px 30px 0px 20px;
+}
+
+.menu i {
+  padding-left: 10%;
 }
 
 .list-menu {
@@ -378,6 +409,39 @@ span.prix {
   border-radius: 25px;
   border: none;
   color: white;
+}
+
+.btn-footer:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 1024px) {
+  .header {
+    justify-content: center;
+    text-align: center;
+  }
+  .list-item {
+    width: 80%;
+  }
+  .list-menu {
+    margin-left: 30px;
+  }
+  .img img {
+    height: 383px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .header {
+    gap: 45%;
+  }
+  .carte {
+    width: 80%;
+    margin-left: 10%;
+    padding: 0% 20% 0% 20%;
+  }
+  .menu h1 {
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

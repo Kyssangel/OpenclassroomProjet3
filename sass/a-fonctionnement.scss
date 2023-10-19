@@ -34,7 +34,7 @@
   width: 18px;
   height: 17.91px;
 }
-span .number {
+button .number {
   color: white;
 }
 .section-fonction span {
@@ -45,4 +45,33 @@ span .number {
   border-radius: 100%;
   color: white;
   background: #9356dc;
+}
+@media screen and (min-width: 1024px){
+.section-fonction h1{
+  padding-left: 10%;
+}
+.liste-btn{
+ display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+}
+.section-fonction span{
+  
+  flex-direction: row;
+ left: 10%;
+ position: absolute ;
+
+}
+.section-fonction{
+ height: 220px;
+}
+button.btn{
+  width: 322px;
+}
+.section-restaurants{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+}
 }
