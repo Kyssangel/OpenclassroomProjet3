@@ -250,7 +250,7 @@ span .number {
 .header {
   display: flex;
   height: 63px;
-  gap: 25%;
+  gap: 20%;
 }
 
 .header .img {
@@ -289,6 +289,7 @@ span .number {
 }
 
 .menu h1 {
+  display: flex;
   font-family: Shrikhand;
   font-size: 24px;
   font-style: italic;
@@ -296,7 +297,9 @@ span .number {
   line-height: 41px;
   letter-spacing: 0em;
   text-align: left;
-  padding: 15px 0px 0px 10px;
+  padding: 15px 30px 0px 10px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .list-menu {
@@ -326,7 +329,7 @@ span .number {
   border-radius: 15.04px;
   box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1019607843);
   background: #ffffff;
-  width: 90%;
+  width: 95%;
   height: 69px;
   border: none;
   padding-left: 10px;
@@ -334,15 +337,18 @@ span .number {
 }
 
 .list-item p {
+  display: flex;
   font-family: Roboto;
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 300;
   line-height: 18px;
   text-align: left;
+  justify-content: space-between;
+  padding-right: 15px;
+  padding-top: 5px;
 }
 
-.list-item .prix {
-  flex-direction: row;
+span.prix {
   font-family: Roboto;
   font-size: 15px;
   font-weight: 700;
@@ -365,7 +371,7 @@ span .number {
 
 .btn-footer {
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
-  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
   width: 186px;
   height: 50px;
   top: 50px;
