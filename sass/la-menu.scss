@@ -3,7 +3,10 @@
   border-radius: 30px 30px 0px 0px;
   width: 100%;
   text-align: center;
+  position: relative;
+  margin-top: -30px;
 }
+
 .icon .fa-regular {
   height: 24px;
   width: 24px;
@@ -98,7 +101,7 @@ span.prix {
 .btn-footer:hover {
   transform: scale(1.1);
 }
-@media screen and ( max-width: 1024px){
+@media screen and ( min-width: 769px){
   .header{
 justify-content: center;
     text-align: center;
@@ -113,12 +116,7 @@ justify-content: center;
 .img img{
   height:383px ;
 }
-.section-footer{
 
-}
-.footer-item{
- 
-}
 }
 @media screen and (min-width: 1024px){
   .header{

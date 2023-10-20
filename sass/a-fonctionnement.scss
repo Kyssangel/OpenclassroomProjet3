@@ -28,6 +28,7 @@
   font-size: 16px;
   font-weight: 500;
   line-height: 19px;
+  position: relative;
 }
 .btn i {
   padding-right: 10%;
@@ -38,40 +39,43 @@ button .number {
   color: white;
 }
 .section-fonction span {
-  right: 24px;
+
   width: 24px;
+  height: 24px;
   position: absolute;
-  left: 6%;
+  left: -12px;
   border-radius: 100%;
   color: white;
   background: #9356dc;
-}
-@media screen and (min-width: 1024px){
-.section-fonction h1{
-  padding-left: 10%;
-}
-.liste-btn{
- display: flex;
-  flex-direction: row;
+  display: flex;
   justify-content: center;
-  position: relative;
+  align-items: center;
 }
-.section-fonction span{
-  
-  flex-direction: row;
- left: 10%;
- position: absolute ;
+@media screen and (min-width: 769px) {
+  .section-fonction h1 {
+    padding-left: 10%;
+  }
+  .liste-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  // .section-fonction span {
+  //   top: 10px;
+  //   left: 898px;
+  //   flex-direction: row;
+  // }
+  .section-fonction {
+    height: 220px;
+  }
+  button.btn {
+    width: 322px;
+  }
 
-}
-.section-fonction{
- height: 220px;
-}
-button.btn{
-  width: 322px;
-}
-.section-restaurants{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-
-}
+  // .carte {
+  //   display: grid;
+  //   grid-template-columns: 1fr 1fr;
+  //   column-gap: 10px;
+  //   row-gap: 15px;
+  // }
 }

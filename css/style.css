@@ -121,6 +121,7 @@ header img {
   font-size: 16px;
   font-weight: 500;
   line-height: 19px;
+  position: relative;
 }
 
 .btn i {
@@ -134,16 +135,19 @@ button .number {
 }
 
 .section-fonction span {
-  right: 24px;
   width: 24px;
+  height: 24px;
   position: absolute;
-  left: 6%;
+  left: -12px;
   border-radius: 100%;
   color: white;
   background: #9356dc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 769px) {
   .section-fonction h1 {
     padding-left: 10%;
   }
@@ -151,22 +155,12 @@ button .number {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    position: relative;
-  }
-  .section-fonction span {
-    flex-direction: row;
-    left: 10%;
-    position: absolute;
   }
   .section-fonction {
     height: 220px;
   }
   button.btn {
     width: 322px;
-  }
-  .section-restaurants {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
   }
 }
 .section-restaurants {
@@ -284,13 +278,10 @@ button .number {
 }
 
 .header .img {
-  font-family: Shrikhand;
-  font-style: italic;
-  font-weight: 400;
   width: 162px;
   height: 44px;
-  left: 16px;
   margin-top: 10px;
+  object-fit: contain;
 }
 
 .header .link-header {
@@ -304,6 +295,7 @@ button .number {
 .img img {
   width: 100%;
   height: 275px;
+  object-fit: cover;
 }
 
 .carte {
@@ -311,6 +303,8 @@ button .number {
   border-radius: 30px 30px 0px 0px;
   width: 100%;
   text-align: center;
+  position: relative;
+  margin-top: -30px;
 }
 
 .icon .fa-regular {
@@ -415,7 +409,7 @@ span.prix {
   transform: scale(1.1);
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 769px) {
   .header {
     justify-content: center;
     text-align: center;
