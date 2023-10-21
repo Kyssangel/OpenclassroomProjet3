@@ -4,3 +4,29 @@ $main-color2: #008766;
 $main-color3: #89c8fa;
 $main-color4: #003a68;
 $main-color5: #9356dc;
+.loader {
+  width: 48px;
+  height: 48px;
+  background: #fff;
+  border-radius: 50%;
+  animation: roll 1s ease-in-out infinite alternate;
+  position: fixed;
+}
+.loader:after {
+  content: "";
+inset: 5px;
+  border-radius: 50%;
+  border: 5px solid;
+  border-color: #ff3d00 transparent;
+align-items: center;
+}
+@keyframes roll {
+  0% {
+    transform: translateX(-150%) rotate(0deg);
+  }
+
+  100% {
+    transform: translateX(150%) rotate(360deg);
+  }
+}
+
