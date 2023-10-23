@@ -62,13 +62,14 @@
   position: absolute;
   right: 10%;
   top: 40%;
-  width: 24px;
-  height: 21px;
+ 
  color: black;
   
 }
-span.card-like:hover{
+span.card-like i:hover{
 @include color-btn;
 border: none;
 }
-
+.card-like{
+  border: none;
+}
