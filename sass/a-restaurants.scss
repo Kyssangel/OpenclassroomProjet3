@@ -67,5 +67,8 @@
  color: black;
   
 }
-
+span.card-like:hover{
+@include color-btn;
+border: none;
+}
 

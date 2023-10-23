@@ -1,28 +1,56 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap");
-.loader {
-  width: 48px;
-  height: 48px;
-  background: #fff;
-  border-radius: 50%;
-  animation: roll 1s ease-in-out infinite alternate;
-  position: fixed;
-}
-
-.loader:after {
-  content: "";
-  inset: 5px;
-  border-radius: 50%;
-  border: 5px solid;
-  border-color: #ff3d00 transparent;
+.loader-container {
+  border-radius: 5px;
+  width: 400px;
+  height: 400px;
+  margin: 100px auto 0;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
-@keyframes roll {
+.loader {
+  display: block;
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 7px solid transparent;
+  border-top-color: crimson;
+  animation: spin 3s linear infinite;
+}
+
+.loader::before, .loader::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  border: 7px solid transparent;
+}
+
+.loader::before {
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  border-top-color: rgb(236, 159, 174);
+  animation: spin 3s linear infinite;
+}
+
+.loader::after {
+  top: 25px;
+  left: 25px;
+  right: 25px;
+  bottom: 25px;
+  border-top-color: rgb(192, 108, 125);
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
   0% {
-    transform: translateX(-150%) rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
-    transform: translateX(150%) rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 contenair {
@@ -262,6 +290,11 @@ button .number {
   color: black;
 }
 
+span.card-like:hover {
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+  border: none;
+}
+
 .section-footer {
   background: #353535;
   height: 186px;
@@ -294,105 +327,6 @@ button .number {
   flex-direction: column;
 }
 
-.loader {
-  transform: rotateZ(45deg);
-  perspective: 1000px;
-  border-radius: 50%;
-  width: 48px;
-  height: 48px;
-  color: #fff;
-  justify-content: center;
-  align-items: center;
-}
-
-.loader:before,
-.loader:after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: inherit;
-  height: inherit;
-  border-radius: 50%;
-  transform: rotateX(70deg);
-  animation: 1s spin linear infinite;
-}
-
-.loader:after {
-  color: #FF3D00;
-  transform: rotateY(70deg);
-  animation-delay: 0.4s;
-}
-
-@keyframes rotate {
-  0% {
-    transform: translate(-50%, -50%) rotateZ(0deg);
-  }
-  100% {
-    transform: translate(-50%, -50%) rotateZ(360deg);
-  }
-}
-@keyframes rotateccw {
-  0% {
-    transform: translate(-50%, -50%) rotate(0deg);
-  }
-  100% {
-    transform: translate(-50%, -50%) rotate(-360deg);
-  }
-}
-@keyframes spin {
-  0%, 100% {
-    box-shadow: 0.2em 0px 0 0px currentcolor;
-  }
-  12% {
-    box-shadow: 0.2em 0.2em 0 0 currentcolor;
-  }
-  25% {
-    box-shadow: 0 0.2em 0 0px currentcolor;
-  }
-  37% {
-    box-shadow: -0.2em 0.2em 0 0 currentcolor;
-  }
-  50% {
-    box-shadow: -0.2em 0 0 0 currentcolor;
-  }
-  62% {
-    box-shadow: -0.2em -0.2em 0 0 currentcolor;
-  }
-  75% {
-    box-shadow: 0px -0.2em 0 0 currentcolor;
-  }
-  87% {
-    box-shadow: 0.2em -0.2em 0 0 currentcolor;
-  }
-}
-.loader {
-  width: 48px;
-  height: 48px;
-  background: #fff;
-  border-radius: 50%;
-  animation: roll 1s ease-in-out infinite alternate;
-  position: fixed;
-}
-
-.loader:after {
-  content: "";
-  inset: 5px;
-  border-radius: 50%;
-  border: 5px solid;
-  border-color: #ff3d00 transparent;
-  align-items: center;
-}
-
-@keyframes roll {
-  0% {
-    transform: translateX(-150%) rotate(0deg);
-  }
-  100% {
-    transform: translateX(150%) rotate(360deg);
-  }
-}
 .header {
   display: flex;
   height: 63px;
