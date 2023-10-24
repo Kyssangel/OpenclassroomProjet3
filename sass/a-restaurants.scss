@@ -72,22 +72,45 @@
 .card-text {
   position: relative;
 }
-.card-like i{
+.card-like i {
   position: absolute;
-  right: 10%;
-  top: 40%;
+ right: 0%;
+  top: 20%;
+}
+.card-like i{
  
- 
+    display: flex;
+    font-size: 2rem;
+    padding-right: 3rem;
+  }
+
+.card-like {
+  display: flex;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+border-color: black;
 }
 
-span.card-like i:hover {
+.card-like i:hover {
   @include color-btn;
-  border: none;
- 
+  cursor: pointer;
+  opacity: 0;
+  animation: effet-opacity 1.5s ease;
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-
-@media screen and (min-width: 769px) {
+.card-like.fa-regular.fa-heart{
+  border-color: black;
+  display: none;
+}
+.card-like i:hover .fa-solid.fa-heart{
+  display: inline;
   
+}
+@media screen and (min-width: 769px) {
   .all-card {
     display: grid;
     grid-template-columns: 1fr 1fr;

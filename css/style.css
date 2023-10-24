@@ -55,6 +55,24 @@
     transform: rotate(360deg);
   }
 }
+@keyframes effet-opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes apparition {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 contenair {
   justify-content: center;
 }
@@ -302,13 +320,42 @@ button .number {
 
 .card-like i {
   position: absolute;
-  right: 10%;
-  top: 40%;
+  right: 0%;
+  top: 20%;
 }
 
-span.card-like i:hover {
+.card-like i {
+  display: flex;
+  font-size: 2rem;
+  padding-right: 3rem;
+}
+
+.card-like {
+  display: flex;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  border-color: black;
+}
+
+.card-like i:hover {
   background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
-  border: none;
+  cursor: pointer;
+  opacity: 0;
+  animation: effet-opacity 1.5s ease;
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card-like.fa-regular.fa-heart {
+  border-color: black;
+  display: none;
+}
+
+.card-like i:hover .fa-solid.fa-heart {
+  display: inline;
 }
 
 @media screen and (min-width: 769px) {
