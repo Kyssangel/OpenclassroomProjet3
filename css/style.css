@@ -7,6 +7,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: fixed;
 }
 
 .loader {
@@ -20,7 +21,8 @@
   animation: spin 3s linear infinite;
 }
 
-.loader::before, .loader::after {
+.loader::before,
+.loader::after {
   content: "";
   position: absolute;
   border-radius: 50%;
@@ -221,11 +223,10 @@ button .number {
 .section-restaurants {
   background: #f6f6f6;
   width: 100%;
-  height: 1200px;
+  align-items: center;
   display: flex;
   flex-direction: column;
   gap: 20px;
-  align-items: center;
 }
 
 .section-restaurants h1 {
@@ -235,6 +236,23 @@ button .number {
   line-height: 28px;
   padding: 30px 0px 0px 20px;
   height: 68px;
+  padding-right: 65%;
+}
+
+.new {
+  width: 80px;
+  height: 29px;
+  border-radius: 2px;
+  background: #99e2d0;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  font-family: Roboto;
+  font-size: 14px;
+  text-align: center;
+  color: #008766;
+  padding: 5px 0px 5px 0px;
 }
 
 .card {
@@ -243,6 +261,7 @@ button .number {
   border-radius: 20px;
   width: 90%;
   height: 251px;
+  position: relative;
 }
 
 .card img {
@@ -281,11 +300,10 @@ button .number {
   position: relative;
 }
 
-.card-like {
+.card-like i {
   position: absolute;
   right: 10%;
   top: 40%;
-  color: black;
 }
 
 span.card-like i:hover {
@@ -293,10 +311,19 @@ span.card-like i:hover {
   border: none;
 }
 
-.card-like {
-  border: none;
+@media screen and (min-width: 769px) {
+  .all-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+    row-gap: 40px;
+    padding-bottom: 40px;
+    width: 75%;
+  }
+  .card img {
+    object-fit: cover;
+  }
 }
-
 .section-footer {
   background: #353535;
   height: 186px;
@@ -332,11 +359,11 @@ span.card-like i:hover {
 .header {
   display: flex;
   height: 63px;
-  gap: 25%;
+  justify-content: space-around;
 }
 
 .header i {
-  gap: 20%;
+  gap: 25%;
 }
 
 .header .img {
@@ -360,6 +387,11 @@ span.card-like i:hover {
   object-fit: cover;
 }
 
+@media screen and (min-width: 769px) {
+  .header {
+    padding: 0% 35% 0% 0%;
+  }
+}
 .carte {
   background: #f6f6f6;
   border-radius: 30px 30px 0px 0px;

@@ -1,10 +1,11 @@
 .header {
   display: flex;
     height: 63px;
-    gap: 25%;
+    justify-content: space-around;
   }
   .header i{
-   gap: 20%;
+    gap: 25%;
+    
   }
   .header .img {
     width: 162px;
@@ -25,5 +26,11 @@
     width: 100%;
     height:275px;
     object-fit: cover;
+
+  }
+  @media screen and (min-width: 769px){
+.header{
+padding: 0% 35% 0% 0%;
+}
 
   }
