@@ -31,15 +31,14 @@
   position: relative;
 }
 .btn i {
-  padding-right: 10%;
-  width: 18px;
-  height: 17.91px;
+  padding-right: 15%;
+  
+  font-size: 1.5rem;
 }
 button .number {
   color: white;
 }
 .section-fonction span {
-
   width: 24px;
   height: 24px;
   position: absolute;
@@ -60,16 +59,25 @@ button .number {
     flex-direction: row;
     justify-content: center;
   }
-  // .section-fonction span {
-  //   top: 10px;
-  //   left: 898px;
-  //   flex-direction: row;
-  // }
+
   .section-fonction {
     height: 220px;
   }
   button.btn {
     width: 322px;
   }
-
+}
+@media screen and (min-width: 1024px) {
+  .section-fonction h1 {
+    padding-left: 15%;
+  }
+  .liste-btn {
+    display: flex;
+    gap: 30px;
+    width: 85%;
+    padding-left: 15%;
+  }
+  button.btn {
+    width: 100%;
+  }
 }

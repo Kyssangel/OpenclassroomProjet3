@@ -16,8 +16,13 @@
   padding: 20px 0px 20px 0px;
   margin-left: -10%;
 }
-.card-lik {
-  @include la-card-like;
+.card-lik{
+  position: absolute;
+  left: 80%;
+  top: 25px;
+  width: 24px;
+  height: 24px;
+  font-size: 1.5rem;
 }
 .card-lik .fa-solid.fa-heart {
   display: none;
@@ -138,5 +143,8 @@ span.prix {
   }
   .menu h1 {
     text-align: center;
+  }
+  .card-lik {
+    @include la-card-like;
   }
 }
