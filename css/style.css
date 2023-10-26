@@ -320,23 +320,13 @@ button .number {
 .card-like {
   width: 24px;
   height: 24px;
-  padding: 0;
-  margin: 0;
-}
-
-.card-like {
   position: absolute;
   left: 85%;
   top: 80%;
   font-size: 1.5rem;
-}
-
-.card-like {
   display: flex;
-  height: 24px;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
 }
 
 .card-like .fa-solid.fa-heart {
@@ -459,21 +449,19 @@ button .number {
   margin-left: -10%;
 }
 
-.card-lik i {
+.card-lik {
   position: absolute;
   left: 60%;
-  top: 10px;
-}
-
-.card-lik i {
+  top: 25px;
+  width: 24px;
+  height: 24px;
+  font-size: 1.5rem;
   display: flex;
-  height: 50px;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
 }
 
-.card-lik.fa-solid.fa-heart {
+.card-lik .fa-solid.fa-heart {
   display: none;
 }
 
