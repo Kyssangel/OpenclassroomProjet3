@@ -69,32 +69,35 @@
   padding: 5px 0px 10px 15px;
   color: black;
 }
-
-.card-like{
- 
+.card-like {
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  margin: 0;
 }
-
-.card-like i{
+.card-like {
   position: absolute;
+  left: 80%;
+  top: 80%;
+  font-size: 1.5rem;
+}
+.card-like {
   display: flex;
-  height: 50px;
+  height: 24px;
   align-items: center;
   justify-content: center;
-  font-size: 1rem;
-
+  font-size: 1.5rem;
 }
-.card-like .fa-solide.fa-heart {
+.card-like .fa-solid.fa-heart {
   display: none;
-
 }
 
-.card-like i:hover {
+.card-like :hover {
   @include color-btn;
   cursor: pointer;
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
- 
 }
 
 .card-like:hover .fa-regular.fa-heart {

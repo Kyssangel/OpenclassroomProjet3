@@ -19,6 +19,7 @@
   border: 7px solid transparent;
   border-top-color: crimson;
   animation: spin 3s linear infinite;
+  backface-visibility: hidden;
 }
 
 .loader::before,
@@ -316,23 +317,26 @@ button .number {
   color: black;
 }
 
-.card-text {
-  position: relative;
+.card-like {
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  margin: 0;
 }
 
-.card-like i {
+.card-like {
   position: absolute;
-  right: 10%;
-  top: 20%;
+  left: 80%;
+  top: 80%;
   font-size: 1.5rem;
 }
 
 .card-like {
   display: flex;
-  height: 50px;
+  height: 24px;
   align-items: center;
   justify-content: center;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 .card-like .fa-solid.fa-heart {
@@ -445,24 +449,48 @@ button .number {
   margin-top: -30px;
 }
 
-.icon {
-  height: 24px;
-  width: 24px;
-}
-
 .menu h1 {
   font-family: Shrikhand;
-  font-size: 22px;
+  font-size: 24px;
   font-style: italic;
   font-weight: 400;
-  line-height: 41px;
-  letter-spacing: 0em;
   text-align: left;
-  padding: 15px 30px 0px 20px;
+  padding: 20px 0px 20px 0px;
+  margin-left: -10%;
 }
 
-.menu i {
-  padding-left: 10%;
+.card-lik i {
+  position: absolute;
+  left: 60%;
+  top: 10px;
+}
+
+.card-lik i {
+  display: flex;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.card-lik.fa-solid.fa-heart {
+  display: none;
+}
+
+.card-lik:hover {
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+  cursor: pointer;
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card-lik:hover .fa-regular.fa-heart {
+  display: none;
+}
+
+.card-lik:hover .fa-solid.fa-heart {
+  display: inline;
 }
 
 .list-menu {
