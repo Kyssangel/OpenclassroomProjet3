@@ -15,7 +15,7 @@
 .section-title p {
   top: 220px;
   left: 34px;
-font-size: 18px;
+  font-size: 18px;
   font-weight: 300;
   line-height: 21px;
   color: #353535;
@@ -30,8 +30,10 @@ font-size: 18px;
   box-shadow: 0px 4px 10px 0px #00000040;
 }
 .button:hover {
-  transform: scale(1.1);
-  background-color: #ffffff;
+  cursor: pointer;
+  transform: scale(1.02);
+  background-color: darken;
+  transition: 0.5s;
 }
 .section-title .button {
   font-size: 16px;

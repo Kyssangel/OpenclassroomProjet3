@@ -150,8 +150,10 @@ header img {
 }
 
 .button:hover {
-  transform: scale(1.1);
-  background-color: #ffffff;
+  cursor: pointer;
+  transform: scale(1.02);
+  background-color: darken;
+  transition: 0.5s;
 }
 
 .section-title .button {
@@ -320,14 +322,9 @@ button .number {
 
 .card-like i {
   position: absolute;
-  right: 0%;
+  right: 10%;
   top: 20%;
-}
-
-.card-like i {
-  display: flex;
-  font-size: 2rem;
-  padding-right: 3rem;
+  font-size: 1.5rem;
 }
 
 .card-like {
@@ -336,25 +333,25 @@ button .number {
   align-items: center;
   justify-content: center;
   font-size: 1rem;
-  border-color: black;
 }
 
-.card-like i:hover {
+.card-like .fa-solid.fa-heart {
+  display: none;
+}
+
+.card-like :hover {
   background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
   cursor: pointer;
-  opacity: 0;
-  animation: effet-opacity 1.5s ease;
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.card-like.fa-regular.fa-heart {
-  border-color: black;
+.card-like:hover .fa-regular.fa-heart {
   display: none;
 }
 
-.card-like i:hover .fa-solid.fa-heart {
+.card-like:hover .fa-solid.fa-heart {
   display: inline;
 }
 
@@ -448,7 +445,7 @@ button .number {
   margin-top: -30px;
 }
 
-.icon .fa-regular {
+.icon {
   height: 24px;
   width: 24px;
 }
