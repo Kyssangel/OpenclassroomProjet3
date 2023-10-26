@@ -1,17 +1,22 @@
+
+header.header{
+  padding: 0;
+  
+}
 .header {
   display: flex;
     height: 63px;
-    justify-content: space-around;
-  }
-  .header i{
-    gap: 25%;
     
-  }
+    gap: 30%;
+     }
+
+  
   .header .img {
     width: 162px;
     height: 44px;
     margin-top: 10px;
     object-fit: contain;
+    
   }
   .header .link-header {
     width: 30px;
@@ -29,8 +34,14 @@
 
   }
   @media screen and (min-width: 769px){
-.header{
+.header {
 padding: 0% 35% 0% 0%;
 }
 
+  }
+  @media screen and (min-width: 1024px){
+header.header{
+ padding: 0;
+ justify-content: left;
+}
   }
