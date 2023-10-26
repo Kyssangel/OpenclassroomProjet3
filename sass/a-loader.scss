@@ -7,6 +7,8 @@
   justify-content: center;
   align-items: center;
   position: fixed;
+               
+ 
 }
 .loader {
   display: block;
@@ -17,6 +19,7 @@
   border: 7px solid transparent;
   border-top-color: crimson;
   animation: spin 3s linear infinite;
+  backface-visibility: hidden;  
 }
 .loader::before,
 .loader::after {
