@@ -45,7 +45,7 @@
   display: grid;
   gap: 30px;
   padding: 20px;
-  width:90%;
+  width: 90%;
 }
 .card img {
   width: 100%;
@@ -77,38 +77,32 @@
   padding: 5px 0px 10px 15px;
   color: black;
 }
-.card-like {
+.card-like i {
   width: 24px;
   height: 24px;
-  position: absolute;
-  left: 85%;
-  top: 80%;
+   left: 85%;
+ 
   font-size: 1.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+.card-like i{
+position: absolute;
 
-.card-like .fa-solid.fa-heart {
-  display: none;
 }
 
-.card-like :hover {
+.my-heart-full{
+  opacity: 0;
+}
+.my-heart-full:hover{
+  opacity: 1;
   @include color-btn;
-  cursor: pointer;
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
-.card-like:hover .fa-regular.fa-heart {
-  display: none;
-}
-.card-like:hover .fa-solid.fa-heart {
-  display: inline;
-}
 @media screen and (min-width: 769px) {
- 
   .all-card {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -132,8 +126,8 @@
     justify-content: center;
   }
 }
-@media screen and (min-width: 1024px){
-  .all-card{
+@media screen and (min-width: 1024px) {
+  .all-card {
     width: 85%;
   }
   .card img {
