@@ -1,14 +1,27 @@
 .loader-container {
   border-radius: 5px;
-  width: 400px;
-  height: 400px;
-  margin: 100px auto 0;
+  width: 100%;
+  height: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   position: fixed;
-               
- 
+  top: 0;
+  left: 0;
+  background-color: white;
+  z-index: 10;
+  visibility: hidden;
+  animation: loader-display 3s;
+}
+
+@keyframes loader-display {
+  from {
+    visibility: visible;
+  }
+  to {
+    visibility: hidden;
+  }
 }
 .loader {
   display: block;
@@ -17,7 +30,7 @@
   height: 150px;
   border-radius: 50%;
   border: 7px solid transparent;
-  border-top-color: crimson;
+  border-top-color: $main-color4;
   animation: spin 3s linear infinite;
   backface-visibility: hidden;  
 }
@@ -33,7 +46,7 @@
   left: 10px;
   right: 10px;
   bottom: 10px;
-  border-top-color: rgb(236, 159, 174);
+  border-top-color: $main-color5;
   animation: spin 3s linear infinite;
 }
 .loader::after {
@@ -41,7 +54,7 @@
   left: 25px;
   right: 25px;
   bottom: 25px;
-  border-top-color: rgb(192, 108, 125);
+  border-top-color: #ff79da;
   animation: spin 2s linear infinite;
 }
 @keyframes spin {

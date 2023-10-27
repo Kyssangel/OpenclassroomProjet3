@@ -28,5 +28,26 @@
 @media screen and (min-width: 1024px) {
   .section-footer {
     padding-left: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+
+    & .list-footer {
+      width: 60%;
+
+      & ul {
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        & li {
+          width: 100%;
+
+          & a {
+            width: 100%;
+            display: inline-block;
+          }
+        }
+      }
+    }
   }
 }
