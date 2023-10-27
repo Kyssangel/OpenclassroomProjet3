@@ -32,8 +32,8 @@
 .button:hover {
   cursor: pointer;
   transform: scale(1.02);
-  background-color: darken;
-  transition: 0.5s;
+  box-shadow: 0 3px 10px rgb(243, 243, 243);
+  transition: 1s;
 }
 .section-title .button {
   font-size: 16px;

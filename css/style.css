@@ -153,8 +153,8 @@ header img {
 .button:hover {
   cursor: pointer;
   transform: scale(1.02);
-  background-color: darken;
-  transition: 0.5s;
+  box-shadow: 0 3px 10px rgb(243, 243, 243);
+  transition: 1s;
 }
 
 .section-title .button {
@@ -176,7 +176,7 @@ header img {
 
 .section-fonction h1 {
   text-align: left;
-  padding: 30px 0px 30px 10px;
+  padding: 30px 0px 30px 30px;
 }
 
 .liste-btn {
@@ -203,7 +203,7 @@ header img {
 }
 
 .btn i {
-  padding-right: 15%;
+  padding-right: 8%;
   font-size: 1.5rem;
 }
 
@@ -242,13 +242,13 @@ button .number {
 }
 @media screen and (min-width: 1024px) {
   .section-fonction h1 {
-    padding-left: 15%;
+    padding-left: 30px;
   }
   .liste-btn {
     display: flex;
     gap: 30px;
-    width: 85%;
-    padding-left: 15%;
+    width: 95%;
+    padding-left: 30px;
   }
   button.btn {
     width: 100%;
@@ -351,6 +351,7 @@ button .number {
 
 .card-like i {
   position: absolute;
+  bottom: 10%;
 }
 
 .my-heart-full {
@@ -363,6 +364,7 @@ button .number {
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  animation: effet-opacity 1.5s ease;
 }
 
 @media screen and (min-width: 769px) {
@@ -381,8 +383,8 @@ button .number {
     width: 24px;
     height: 24px;
     position: absolute;
-    left: 85%;
-    top: 80%;
+    left: 75%;
+    bottom: 10%;
     font-size: 1.5rem;
     display: flex;
     align-items: center;
@@ -390,6 +392,9 @@ button .number {
   }
 }
 @media screen and (min-width: 1024px) {
+  .section-restaurants h1 {
+    padding-left: 9%;
+  }
   .all-card {
     width: 85%;
   }
@@ -495,74 +500,26 @@ header.header {
   margin-left: 10%;
 }
 
-.card-lik {
+.card-lik i {
   position: absolute;
-  left: 80%;
+  left: 85%;
   top: 25px;
   width: 24px;
   height: 24px;
   font-size: 1.5rem;
 }
 
-.card-lik .fa-solid.fa-heart {
-  display: none;
-}
-
-.card-lik:hover {
-  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
-  cursor: pointer;
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.card-lik:hover .fa-regular.fa-heart {
-  display: none;
-}
-
-.card-lik:hover .fa-solid.fa-heart {
-  display: inline;
-}
-
-.list-menu {
-  padding: 20px 0px 0px 0px;
-  font-family: Roboto;
-  font-size: 16px;
-  text-align: left;
-  width: 40px;
-  border-bottom: 3px solid #99e2d0;
-  margin-bottom: 20px;
-  padding-bottom: 2px;
-  margin-left: 20px;
-}
-
-.list-item.select-choix i {
-  width: 30px;
-  height: 69px;
-}
-
 .select-choix i {
   display: flex;
+  justify-content: center;
   background-color: #99E2D0;
   color: white;
   font-weight: bold;
   font-size: 1.3rem;
   align-items: center;
-  justify-content: center;
   border-radius: 0 1rem 1rem 0;
-  width: 4rem;
+  width: 50px;
   margin-right: -4rem;
-  margin-left: 85%;
-}
-
-.select-choix:hover {
-  transform: scale(1);
-}
-
-.select-choix i:hover {
-  transform: scaleX(0);
-  transition: transform 2000ms;
-  transform-origin: right;
 }
 
 .list-item h2 {
@@ -625,21 +582,24 @@ span.prix {
   background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
   width: 186px;
   height: 50px;
-  top: 50px;
   border-radius: 25px;
   border: none;
   color: white;
 }
 
 .btn-footer:hover {
-  background-color: white;
-  transform: scale(1.1);
+  transform: scale(1.02);
+  box-shadow: 0 3px 10px rgb(250, 248, 248);
+  transition: 1s;
 }
 
 @media screen and (min-width: 769px) {
   .header {
     justify-content: center;
     text-align: center;
+  }
+  .card-lik i {
+    left: 40%;
   }
   .list-item {
     width: 80%;
@@ -655,6 +615,9 @@ span.prix {
   .header {
     gap: 45%;
   }
+  .card-lik i {
+    top: 20%;
+  }
   .carte {
     width: 80%;
     margin-left: 10%;
@@ -667,7 +630,7 @@ span.prix {
   .card-lik {
     position: absolute;
     left: 60%;
-    top: 25px;
+    top: 20px;
     width: 24px;
     height: 24px;
     font-size: 1.5rem;

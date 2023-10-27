@@ -16,70 +16,25 @@
   padding: 20px 0px 20px 0px;
   margin-left: 10%;
 }
-.card-lik{
+.card-lik i {
   position: absolute;
-  left: 80%;
+left: 85%;
   top: 25px;
   width: 24px;
   height: 24px;
-  font-size: 1.5rem;
-}
-.card-lik .fa-solid.fa-heart {
-  display: none;
-}
-.card-lik:hover {
-  @include color-btn;
-  cursor: pointer;
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.card-lik:hover .fa-regular.fa-heart {
-  display: none;
-}
-.card-lik:hover .fa-solid.fa-heart {
-  display: inline;
-}
-.list-menu {
-  padding: 20px 0px 0px 0px;
-  font-family: Roboto;
-  font-size: 16px;
-  text-align: left;
-  width: 40px;
- border-bottom: 3px solid #99e2d0;
-  margin-bottom: 20px;
-  padding-bottom: 2px;
-  margin-left: 20px;
-  
-}
-.list-item.select-choix i{
-  width: 30px;
-  height:69px;
-  
+  font-size:1.5rem;
 }
 .select-choix i{
   display: flex;
+  justify-content: center;
   background-color: #99E2D0;
   color: white;
   font-weight: bold;
   font-size: 1.3rem;
   align-items: center;
-  justify-content: center;
   border-radius: 0 1rem 1rem 0;
-  width: 4rem;
+  width: 50px;
   margin-right: -4rem;
-  margin-left: 85%;
-}
-
-.select-choix:hover{
-transform: scale(1);
-
-}
-
-.select-choix i:hover{
-  transform: scaleX(0);
-  transition: transform 2000ms;
-  transform-origin: right;
 }
 
 .list-item h2 {
@@ -89,9 +44,7 @@ transform: scale(1);
   line-height: 21px;
   letter-spacing: 0em;
   text-align: left;
-  
 }
-
 
 .list-item {
   font-family: Roboto;
@@ -140,24 +93,27 @@ span.prix {
   @include color-btn;
   width: 186px;
   height: 50px;
-  top: 50px;
   border-radius: 25px;
   border: none;
   color: white;
 }
 .btn-footer:hover {
-  background-color: white;
-  transform: scale(1.1);
+ transform: scale(1.02);
+  box-shadow: 0 3px 10px rgb(250, 248, 248);
+  transition: 1s;
 }
 @media screen and (min-width: 769px) {
   .header {
     justify-content: center;
     text-align: center;
   }
-
+  .card-lik i {
+    left: 40%;
+  }
   .list-item {
     width: 80%;
   }
+
   .list-menu {
     margin-left: 30px;
   }
@@ -169,6 +125,9 @@ span.prix {
   .header {
     gap: 45%;
   }
+  .card-lik i {
+    top: 20%;
+  }
   .carte {
     width: 80%;
     margin-left: 10%;
@@ -176,7 +135,7 @@ span.prix {
   }
   .menu h1 {
     text-align: center;
-    padding-right:30%;
+    padding-right: 30%;
   }
   .card-lik {
     @include la-card-like;
