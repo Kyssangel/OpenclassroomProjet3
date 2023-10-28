@@ -25,29 +25,38 @@
   gap: 10px;
   flex-direction: column;
 }
+
 @media screen and (min-width: 1024px) {
   .section-footer {
     padding-left: 20px;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
+    padding: 70px 20px 00px 0px;
 
     & .list-footer {
       width: 60%;
 
       & ul {
+       
+        align-items: center;
         flex-direction: row;
         justify-content: space-evenly;
 
         & li {
+         
           width: 100%;
 
           & a {
             width: 100%;
-            display: inline-block;
-          }
+            display: inline-block;  
         }
       }
     }
   }
+}
+.footer-item{
+  display: flex;
+  gap: 10px;
+ }
 }

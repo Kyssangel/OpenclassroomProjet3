@@ -16,24 +16,34 @@
   padding: 20px 0px 20px 0px;
   margin-left: 10%;
 }
-.list-menu{
+.list-menu {
   text-align: left;
   padding: 0px 0px 5px 10px;
   width: 40px;
- padding-left: 0;
+  padding-left: 0;
   border: 3px;
-  border-bottom: 3px solid #99E2D0;
+  border-bottom: 3px solid #99e2d0;
   margin-left: 20px;
 }
 .card-lik i {
   position: absolute;
-left: 85%;
+  left: 85%;
   top: 25px;
   width: 24px;
   height: 24px;
-  font-size:1.5rem;
+  font-size: 1.5rem;
 }
-
+.entrées {
+  padding-left: 6%;
+}
+.plats {
+  padding-top: 30px;
+  padding-left: 6%;
+}
+.dessert {
+  padding-top: 30px;
+  padding-left: 6%;
+}
 .entrées {
   animation: menu-transition 1s;
 }
@@ -46,7 +56,30 @@ left: 85%;
     transform: translateX(0px);
   }
 }
+.plats {
+  animation: menu-transition 1.8s;
+}
 
+@keyframes menu-transition {
+  0% {
+    transform: translateX(-600px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+.dessert {
+  animation: menu-transition 2.5s;
+}
+
+@keyframes menu-transition {
+  0% {
+    transform: translateX(-700px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
 .list-item h2 {
   font-family: Roboto;
   font-size: 18px;
@@ -83,7 +116,8 @@ left: 85%;
   width: 80%;
   transition: all 0.5s;
 
-  & h2, & p {
+  & h2,
+  & p {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -106,15 +140,14 @@ left: 85%;
   }
 
   & .description {
-    width: 30%;
+    width: 60%;
   }
 }
-
 
 .select-choix {
   display: flex;
   justify-content: center;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   color: white;
   font-weight: bold;
   font-size: 1.3rem;
@@ -129,18 +162,10 @@ left: 85%;
   transition: all 0.5s;
 }
 
-
 span.prix {
   font-size: 15px;
   font-weight: 700;
   transition: all 0.5s;
-}
-
-.section-dessert {
-  padding-top: 30px;
-}
-.section-plats {
-  padding-top: 30px;
 }
 .btn-commande {
   padding: 10% 0% 10% 0%;
@@ -182,13 +207,13 @@ span.prix {
   .header {
     gap: 45%;
   }
-  .list-menu{
+  .list-menu {
     text-align: left;
     padding: 0px 0px 5px 10px;
     width: 40px;
-   padding-left: 0;
+    padding-left: 0;
     border: 3px;
-    border-bottom: 3px solid #99E2D0;
+    border-bottom: 3px solid #99e2d0;
     margin-left: 20px;
   }
   .card-lik i {
@@ -199,6 +224,7 @@ span.prix {
     margin-left: 10%;
     padding: 0% 20% 0% 20%;
   }
+
   .menu h1 {
     text-align: center;
     padding-right: 30%;
