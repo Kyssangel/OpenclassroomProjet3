@@ -12,7 +12,7 @@
   @include color-btn;
   z-index: 10;
   visibility: hidden;
-  animation: loader-display 3s;
+  animation: loader-display 2s;
   }
   .loader-container h2{
    padding-top: 50px;
@@ -34,7 +34,7 @@
   border-radius: 50%;
   border: 7px solid transparent;
   border-top-color: $main-color4;
-  animation: spin 3s linear infinite;
+  animation: spin 2s linear infinite;
   backface-visibility: hidden;  
 }
 .loader::before,
@@ -50,7 +50,7 @@
   right: 10px;
   bottom: 10px;
   border-top-color: $main-color5;
-  animation: spin 3s linear infinite;
+  animation: spin 2s linear infinite;
 }
 .loader::after {
   top: 25px;

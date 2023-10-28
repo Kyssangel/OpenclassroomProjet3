@@ -14,7 +14,7 @@
   background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
   z-index: 10;
   visibility: hidden;
-  animation: loader-display 3s;
+  animation: loader-display 2s;
 }
 
 .loader-container h2 {
@@ -38,7 +38,7 @@
   border-radius: 50%;
   border: 7px solid transparent;
   border-top-color: #003a68;
-  animation: spin 3s linear infinite;
+  animation: spin 2s linear infinite;
   backface-visibility: hidden;
 }
 
@@ -56,7 +56,7 @@
   right: 10px;
   bottom: 10px;
   border-top-color: #9356dc;
-  animation: spin 3s linear infinite;
+  animation: spin 2s linear infinite;
 }
 
 .loader::after {
