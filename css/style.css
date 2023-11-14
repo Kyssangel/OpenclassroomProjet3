@@ -141,7 +141,7 @@ header img {
   height: 280px;
 }
 
-.section-title h1 {
+.section-title h2 {
   top: 152px;
   left: 42px;
   font-size: 24px;
@@ -194,7 +194,7 @@ header img {
   height: 370px;
 }
 
-.section-fonction h1 {
+.section-fonction h2 {
   text-align: left;
   padding: 30px 0px 30px 30px;
 }
@@ -283,7 +283,7 @@ button .number {
   padding-bottom: 20px;
 }
 
-.section-restaurants h1 {
+.section-restaurants h2 {
   font-family: Roboto;
   font-size: 24px;
   font-weight: 700;
@@ -413,7 +413,7 @@ button .number {
   }
 }
 @media screen and (min-width: 1024px) {
-  .section-restaurants h1 {
+  .section-restaurants h2 {
     padding-left: 9%;
   }
   .all-card {
@@ -457,12 +457,11 @@ button .number {
 
 @media screen and (min-width: 1024px) {
   .section-footer {
-    height: 140px;
+    height: 120px;
     padding-left: 20px;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    padding: 0;
   }
   .section-footer .list-footer {
     width: 60%;
@@ -776,7 +775,7 @@ span.prix {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    padding: 70px 20px 0px 0px;
+    padding-right: 30px;
   }
   .section-footer .list-footer {
     width: 60%;

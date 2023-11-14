@@ -16,6 +16,7 @@
 }
 .footer-item i {
   padding-right: 3%;
+  
 }
 .footer-item a {
   color: white;
@@ -28,12 +29,12 @@
 
 @media screen and (min-width: 1024px) {
   .section-footer {
-    height: 140px;
+    height: 120px;
     padding-left: 20px;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    padding: 0;
+    
 
     & .list-footer {
       width: 60%;
