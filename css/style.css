@@ -162,18 +162,18 @@ header img {
 }
 
 .section-title button {
-  width: 218px;
+  padding: 15px;
   height: 50px;
-  top: 50px;
   border-radius: 25px;
+  font-size: 16px;
+  border: none;
+  color: white;
   background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
 }
-
-.button:hover {
+.section-title button.button:hover {
   cursor: pointer;
-  transform: scale(1.02);
-  box-shadow: 0 3px 10px rgb(243, 243, 243);
+  transform: scale(1.03);
+  box-shadow: 0px 4px 15px 0px black;
   transition: 1s;
 }
 
@@ -225,6 +225,18 @@ header img {
 .btn i {
   padding-right: 8%;
   font-size: 1.5rem;
+}
+
+.btn1 {
+  color: #7E7E7E;
+}
+
+.btn2 {
+  color: #7E7E7E;
+}
+
+.btn3 {
+  color: #9356dc;
 }
 
 button .number {
@@ -699,18 +711,18 @@ span.prix {
 }
 
 .btn-footer {
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
-  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
-  width: 186px;
+  padding: 15px;
   height: 50px;
   border-radius: 25px;
+  font-size: 16px;
   border: none;
   color: white;
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
 }
-
-.btn-footer:hover {
-  transform: scale(1.02);
-  box-shadow: 0 3px 10px rgb(250, 248, 248);
+.btn-footer.btn-footer:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+  box-shadow: 0px 4px 15px 0px black;
   transition: 1s;
 }
 

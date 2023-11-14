@@ -172,18 +172,12 @@ span.prix {
   padding: 10% 0% 10% 0%;
 }
 .btn-footer {
-  box-shadow: 0px 4px 10px 0px #00000040;
+  @include button;
   @include color-btn;
-  width: 186px;
-  height: 50px;
-  border-radius: 25px;
-  border: none;
-  color: white;
+  
+  &.btn-footer:hover {
+ @include buttonHOVER;
 }
-.btn-footer:hover {
- transform: scale(1.02);
-  box-shadow: 0 3px 10px rgb(250, 248, 248);
-  transition: 1s;
 }
 @media screen and (min-width: 769px) {
   .header {

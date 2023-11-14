@@ -22,18 +22,11 @@
   padding: 0px 0px 30px 0px;
 }
 .section-title button {
-  width: 218px;
-  height: 50px;
-  top: 50px;
-  border-radius: 25px;
-  @include color-btn;
-  box-shadow: 0px 4px 10px 0px #00000040;
-}
-.button:hover {
-  cursor: pointer;
-  transform: scale(1.02);
-  box-shadow: 0 3px 10px rgb(243, 243, 243);
-  transition: 1s;
+ @include button;
+@include color-btn;
+&.button:hover {
+  @include buttonHOVER;
+  }
 }
 .section-title .button {
   font-size: 16px;

@@ -34,6 +34,15 @@
   padding-right: 8%;
   font-size: 1.5rem;
 }
+.btn1{
+ color: #7E7E7E;
+}
+.btn2{
+  color: #7E7E7E;
+}
+.btn3{
+  color: $main-color5;
+}
 button .number {
   color: white;
 }
@@ -44,7 +53,7 @@ button .number {
   left: -12px;
   border-radius: 100%;
   color: white;
-  background: #9356dc;
+  background: $main-color5;
   display: flex;
   justify-content: center;
   align-items: center;
