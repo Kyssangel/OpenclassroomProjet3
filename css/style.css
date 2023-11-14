@@ -367,6 +367,7 @@ button .number {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: black;
 }
 
 .card-like i {
@@ -403,7 +404,7 @@ button .number {
     width: 24px;
     height: 24px;
     position: absolute;
-    left: 75%;
+    left: 85%;
     bottom: 10%;
     font-size: 1.5rem;
     display: flex;
@@ -456,11 +457,12 @@ button .number {
 
 @media screen and (min-width: 1024px) {
   .section-footer {
+    height: 140px;
     padding-left: 20px;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    padding: 70px 20px 0px 0px;
+    padding: 0;
   }
   .section-footer .list-footer {
     width: 60%;

@@ -139,10 +139,10 @@
   & .prix {
     transform: translateX(-60px);
   }
-
   & .description {
     width: 60%;
   }
+ 
 }
 
 .select-choix {
@@ -234,4 +234,5 @@ span.prix {
   .card-lik {
     @include la-card-like;
   }
+  
 }

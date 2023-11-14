@@ -85,6 +85,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  color: black;
 }
 .card-like i{
 position: absolute;
@@ -117,7 +118,7 @@ bottom:10%;
     width: 24px;
     height: 24px;
     position: absolute;
-    left: 75%;
+    left: 85%;
     bottom:10%;
     font-size: 1.5rem;
     display: flex;
@@ -135,4 +136,5 @@ bottom:10%;
   .card img {
     object-fit: cover;
   }
+ 
 }

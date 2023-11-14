@@ -28,11 +28,12 @@
 
 @media screen and (min-width: 1024px) {
   .section-footer {
+    height: 140px;
     padding-left: 20px;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    padding: 70px 20px 00px 0px;
+    padding: 0;
 
     & .list-footer {
       width: 60%;
