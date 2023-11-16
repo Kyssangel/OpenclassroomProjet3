@@ -21,11 +21,12 @@
   color: #353535;
   padding: 0px 0px 30px 0px;
 }
+
 .section-title button {
- @include button;
-@include color-btn;
-&.button:hover {
-  @include buttonHOVER;
+  @include button;
+  @include color-btn;
+  &.button:hover {
+    @include buttonHOVER;
   }
 }
 .section-title .button {

@@ -77,16 +77,29 @@ button .number {
   }
 }
 @media screen and (min-width: 1024px) {
-  .section-fonction h1 {
-    padding-left: 30px;
+  .section-fonction h2 {
+    padding-left: 10%;
   }
   .liste-btn {
     display: flex;
     gap: 30px;
-    width: 95%;
-    padding-left: 30px;
+    width: 90%;
+    padding-left: 10%;
+   
   }
   button.btn {
     width: 100%;
+  }
+}
+@media screen and (min-width: 1440px){
+  .section-fonction h2 {
+    padding-left: 10%;
+  }
+  .liste-btn {
+    display: flex;
+    gap: 30px;
+    width: 90%;
+    padding-left: 10%;
+   
   }
 }

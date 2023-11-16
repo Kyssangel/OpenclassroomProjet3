@@ -16,7 +16,6 @@
 }
 .footer-item i {
   padding-right: 3%;
-  
 }
 .footer-item a {
   color: white;
@@ -29,36 +28,9 @@
 
 @media screen and (min-width: 1024px) {
   .section-footer {
-    height: 120px;
-    padding-left: 20px;
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    
-
-    & .list-footer {
-      width: 60%;
-
-      & ul {
-       
-        align-items: center;
-        flex-direction: row;
-        justify-content: space-evenly;
-
-        & li {
-         
-          width: 100%;
-
-          & a {
-            width: 100%;
-            display: inline-block;  
-        }
-      }
-    }
+    @include footer;
   }
-}
-.footer-item{
-  display: flex;
-  gap: 10px;
- }
+  .footer-item {
+    @include footer-it;
+  }
 }
