@@ -128,10 +128,12 @@ bottom:10%;
 }
 @media screen and (min-width: 1024px) {
   .section-restaurants h2{
-    padding-left: 9%;
+    padding-left: 14%;
   }
   .all-card {
-    width: 85%;
+    width: 75%;
+    gap: 60px;
+   
   }
   .card img {
     object-fit: cover;

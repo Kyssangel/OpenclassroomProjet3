@@ -32,10 +32,11 @@
 }
 .btn i {
   padding-right: 8%;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 .btn1{
  color: #7E7E7E;
+
 }
 .btn2{
   color: #7E7E7E;
@@ -78,17 +79,20 @@ button .number {
 }
 @media screen and (min-width: 1024px) {
   .section-fonction h2 {
-    padding-left: 10%;
+    padding-left: 15%;
   }
   .liste-btn {
     display: flex;
     gap: 30px;
-    width: 90%;
-    padding-left: 10%;
+    width: 85%;
+    padding-left: 15%;
    
   }
   button.btn {
     width: 100%;
+  }
+  .btn i{
+   padding-right: 15px;
   }
 }
 @media screen and (min-width: 1440px){
@@ -98,7 +102,7 @@ button .number {
   .liste-btn {
     display: flex;
     gap: 30px;
-    width: 90%;
+    width: 80%;
     padding-left: 10%;
    
   }

@@ -1,7 +1,7 @@
 .section-title {
   background: #f6f6f6;
   text-align: center;
-  height: 280px;
+  height: 250px;
 }
 .section-title h2 {
   top: 152px;
@@ -36,4 +36,9 @@
   text-align: center;
   color: #ffffff;
   border: none;
+}
+@media screen and (min-width: 1024px){
+  .section-title{
+    height: 220px;
+  }
 }
