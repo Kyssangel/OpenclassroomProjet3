@@ -140,7 +140,7 @@ header img {
 
 @media screen and (min-width: 1024px) {
   .section-title {
-    height: 220px;
+    height: 210px;
   }
 }
 .section-fonction {
@@ -231,13 +231,13 @@ button .number {
 }
 @media screen and (min-width: 1024px) {
   .section-fonction h2 {
-    padding-left: 15%;
+    padding-left: 10%;
   }
   .liste-btn {
     display: flex;
     gap: 30px;
-    width: 85%;
-    padding-left: 15%;
+    width: 90%;
+    padding-left: 10%;
   }
   button.btn {
     width: 100%;
@@ -253,7 +253,7 @@ button .number {
   .liste-btn {
     display: flex;
     gap: 30px;
-    width: 80%;
+    width: 90%;
     padding-left: 10%;
   }
 }
@@ -397,7 +397,7 @@ button .number {
 }
 @media screen and (min-width: 1024px) {
   .section-restaurants h2 {
-    padding-left: 14%;
+    padding-left: 12%;
   }
   .all-card {
     width: 75%;
@@ -405,6 +405,14 @@ button .number {
   }
   .card img {
     object-fit: cover;
+  }
+  .card-like {
+    left: 85%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .card-like {
+    left: 85%;
   }
 }
 .section-footer {

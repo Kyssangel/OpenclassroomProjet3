@@ -125,10 +125,11 @@ bottom:10%;
     align-items: center;
     justify-content: center;
   }
+ 
 }
 @media screen and (min-width: 1024px) {
   .section-restaurants h2{
-    padding-left: 14%;
+    padding-left: 12%;
   }
   .all-card {
     width: 75%;
@@ -138,5 +139,12 @@ bottom:10%;
   .card img {
     object-fit: cover;
   }
- 
+ .card-like{
+  left: 85%;
+ }
+}
+@media screen and (min-width: 1440px){
+  .card-like{
+    left: 85%;
+   }
 }
