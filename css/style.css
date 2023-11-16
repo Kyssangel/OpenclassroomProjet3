@@ -17,7 +17,7 @@
   animation: loader-display 2s;
 }
 
-.loader-container h2 {
+.loader-container h1 {
   padding-top: 50px;
   font-size: 50px;
 }
@@ -31,67 +31,16 @@
   }
 }
 .loader {
-  display: block;
-  position: relative;
-  width: 150px;
-  height: 150px;
+  width: 80px;
+  aspect-ratio: 1;
   border-radius: 50%;
-  border: 7px solid transparent;
-  border-top-color: #003a68;
-  animation: spin 2s linear infinite;
-  backface-visibility: hidden;
+  background: radial-gradient(farthest-side, #89c8fa 95%, #f3f3f3) 50% 1px/12px 12px no-repeat, radial-gradient(farthest-side, rgba(0, 0, 0, 0) calc(100% - 14px), #f3f3f3 0);
+  animation: l9 3s infinite linear;
 }
 
-.loader::before,
-.loader::after {
-  content: "";
-  position: absolute;
-  border-radius: 50%;
-  border: 7px solid transparent;
-}
-
-.loader::before {
-  top: 10px;
-  left: 10px;
-  right: 10px;
-  bottom: 10px;
-  border-top-color: #9356dc;
-  animation: spin 2s linear infinite;
-}
-
-.loader::after {
-  top: 25px;
-  left: 25px;
-  right: 25px;
-  bottom: 25px;
-  border-top-color: #ff79da;
-  animation: spin 2s linear infinite;
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes effet-opacity {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes apparition {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
+@keyframes l9 {
   to {
-    opacity: 1;
-    transform: translateY(0);
+    transform: rotate(1turn);
   }
 }
 contenair {
@@ -162,6 +111,7 @@ header img {
 }
 
 .section-title button {
+  opacity: 1;
   width: 210px;
   height: 50px;
   border-radius: 25px;
@@ -171,10 +121,12 @@ header img {
   background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
 }
 .section-title button.button:hover {
+  opacity: 0.8;
   cursor: pointer;
-  transform: scale(1.03);
-  transition: 1s;
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
 }
 
 .section-title .button {
@@ -732,6 +684,7 @@ span.prix {
 }
 
 .btn-footer {
+  opacity: 1;
   width: 210px;
   height: 50px;
   border-radius: 25px;
@@ -741,10 +694,12 @@ span.prix {
   background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
 }
 .btn-footer.btn-footer:hover {
+  opacity: 0.8;
   cursor: pointer;
-  transform: scale(1.03);
-  transition: 1s;
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
 }
 
 @media screen and (min-width: 769px) {

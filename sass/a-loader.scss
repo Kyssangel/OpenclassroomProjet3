@@ -1,4 +1,6 @@
-.loader-container {
+
+.loader-container{
+  
   border-radius: 5px;
   width: 100%;
   height: 100%;
@@ -14,7 +16,7 @@
   visibility: hidden;
   animation: loader-display 2s;
   }
-  .loader-container h2{
+  .loader-container h1{
    padding-top: 50px;
    font-size: 50px;
   }
@@ -26,63 +28,18 @@
     visibility: hidden;
   }
 }
+
 .loader {
-  display: block;
-  position: relative;
-  width: 150px;
-  height: 150px;
+  width:80px;
+  aspect-ratio: 1;
   border-radius: 50%;
-  border: 7px solid transparent;
-  border-top-color: $main-color4;
-  animation: spin 2s linear infinite;
-  backface-visibility: hidden;  
+  background: radial-gradient(farthest-side,$main-color3 95%, $main-color0) 50% 1px/12px
+      12px no-repeat,
+    radial-gradient(farthest-side, #0000 calc(100% - 14px), $main-color0 0);
+  animation: l9 3s infinite linear;
 }
-.loader::before,
-.loader::after {
-  content: "";
-  position: absolute;
-  border-radius: 50%;
-  border: 7px solid transparent;
-}
-.loader::before {
-  top: 10px;
-  left: 10px;
-  right: 10px;
-  bottom: 10px;
-  border-top-color: $main-color5;
-  animation: spin 2s linear infinite;
-}
-.loader::after {
-  top: 25px;
-  left: 25px;
-  right: 25px;
-  bottom: 25px;
-  border-top-color: #ff79da;
-  animation: spin 2s linear infinite;
-}
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes effet-opacity {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes apparition {
- from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
+@keyframes l9 {
   to {
-    opacity: 1;
-    transform: translateY(0);
+    transform: rotate(1turn);
   }
 }
