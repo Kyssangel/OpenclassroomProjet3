@@ -439,6 +439,7 @@ button .number {
 
 .footer-item a {
   color: white;
+  font-size: 16px;
 }
 
 .list-footer ul {
@@ -453,23 +454,22 @@ button .number {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    padding-right: 8%;
+    padding-right: 5%;
   }
   .section-footer .list-footer {
-    width: 70%;
+    width: 60%;
   }
   .section-footer .list-footer ul {
     padding-right: 0;
     align-items: center;
     flex-direction: row;
-    justify-content: space-evenly;
   }
   .section-footer .list-footer ul li {
     width: 100%;
   }
   .section-footer .list-footer ul li a {
     width: 100%;
-    display: inline-block;
+    display: inline;
   }
   .footer-item {
     display: flex;
@@ -771,27 +771,29 @@ span.prix {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    padding-right: 8%;
+    padding-right: 5%;
   }
   .section-footer .list-footer {
-    width: 70%;
+    width: 60%;
   }
   .section-footer .list-footer ul {
     padding-right: 0;
     align-items: center;
     flex-direction: row;
-    justify-content: space-evenly;
   }
   .section-footer .list-footer ul li {
     width: 100%;
   }
   .section-footer .list-footer ul li a {
     width: 100%;
-    display: inline-block;
+    display: inline;
   }
   .footer-item {
     display: flex;
     gap: 10px;
+  }
+  .list-footer {
+    width: 100%;
   }
 }
 
