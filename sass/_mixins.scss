@@ -54,8 +54,8 @@
 
         & a {
           width: 100%;
-          display: inline;
-          
+          display: inline-block;
+          white-space: nowrap;
         }
       }
     }
