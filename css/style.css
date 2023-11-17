@@ -469,7 +469,8 @@ button .number {
   }
   .section-footer .list-footer ul li a {
     width: 100%;
-    display: inline;
+    display: inline-block;
+    white-space: nowrap;
   }
   .footer-item {
     display: flex;
@@ -660,7 +661,7 @@ header.header {
   transform: translateX(-60px);
 }
 .list-item:hover .description {
-  width: 60%;
+  width: 70%;
 }
 
 .select-choix {
@@ -786,7 +787,8 @@ span.prix {
   }
   .section-footer .list-footer ul li a {
     width: 100%;
-    display: inline;
+    display: inline-block;
+    white-space: nowrap;
   }
   .footer-item {
     display: flex;
