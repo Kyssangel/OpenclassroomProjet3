@@ -785,7 +785,8 @@ span.prix {
     justify-content: center;
   }
   span.prix {
-    padding-top: 10%;
+    padding-top: 8%;
+    padding-right: 6px;
   }
 }
 @media screen and (min-width: 1024px) {
