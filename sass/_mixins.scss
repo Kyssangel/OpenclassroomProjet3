@@ -39,10 +39,10 @@
   flex-direction: row-reverse;
   align-items: center;
   padding-right: 5%;
-
+ 
   & .list-footer {
     width: 60%;
-
+    
     & ul {
       padding-right: 0;
       align-items: center;
@@ -56,10 +56,12 @@
           width: 100%;
           display: inline-block;
           white-space: nowrap;
+         
         }
       }
     }
   }
+
 }
 @mixin footer-it {
   display: flex;
