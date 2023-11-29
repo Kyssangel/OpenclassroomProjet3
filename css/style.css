@@ -446,10 +446,6 @@ button .number {
   margin-right: 8px;
 }
 
-.prop1 {
-  margin-left: 10px;
-}
-
 footer ul {
   display: flex;
   gap: 10px;
@@ -674,7 +670,7 @@ header.header {
   transform: translateX(-60px);
 }
 .list-item:hover .description {
-  width: 70%;
+  width: 60%;
 }
 
 .select-choix {
@@ -696,7 +692,7 @@ header.header {
 }
 
 span.prix {
-  padding-top: 10%;
+  padding-top: 13%;
   padding-right: 5px;
   font-size: 15px;
   font-weight: 700;
